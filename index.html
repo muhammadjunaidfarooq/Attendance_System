@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <h1>Face Recognition Based Attendance System</h1>
+
+    <!-- Today's Attendance Section -->
+    <div class="container">
+        <div class="section" id="attendance">
+            <h2>Today's Attendance 📋</h2>
+            <button id="takeAttendance" class="btn">Take Attendance ✅</button>
+            <table>
+                <tr>
+                    <th>S No</th>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Time</th>
+                </tr>
+                <!-- Attendance Records -->
+                <tbody id="attendanceTable">
+                    <!-- Rows will be added dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Add New User Section -->
+        <div class="section" id="addUser">
+            <h2>Add New User 👤</h2>
+            <label for="userName">Enter New User Name*</label>
+            <input type="text" id="userName" placeholder="User Name">
+
+            <label for="userId">Enter New User ID*</label>
+            <input type="text" id="userId" placeholder="User ID">
+
+            <button id="addUserBtn" class="btn">Add New User</button>
+            <p>Total Users in Database: <span id="userCount">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
